@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  portainer:
+    image: portainer/portainer-ce
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+
+  windparkapi.daemon:
+    image: ${DOCKER_REGISTRY-}windparkapidaemon
+    build:
+      context: .
+      dockerfile: Services/Daemons/WindParkAPIDaemon/WindParkAPI.Daemon/Dockerfile
+
+volumes:  
+  portainer_data:  
+

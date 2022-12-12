@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{21622790-C03F-4628-83CF-FFA99A0C3C7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Daemons", "Daemons", "{D7CEB442-3970-4C1C-91E1-B566712C146D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindParkAPIDaemon", "WindParkAPIDaemon", "{337BCBA5-F43F-426B-9B70-3F7D99B0178A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindParkAPI.Daemon", "Services\Daemons\WindParkAPIDaemon\WindParkAPI.Daemon\WindParkAPI.Daemon.csproj", "{B3907D6B-B4C5-49F6-A11C-0624BD2407B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{3FCFCCBB-E2DF-4247-B6D7-7215FDE355A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Messages", "BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{69CB2460-F26A-47B9-ACCB-2B98C732A048}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{327CB405-B5A1-4B6E-838E-C8F51BCF1686}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindParkService", "WindParkService", "{BE454A01-301B-467D-A0BA-E0DD632A437B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindPark.API", "..\Services\WindParkService\WindPark.API\WindPark.API.csproj", "{33C83096-B480-4272-93BF-F1555E17E631}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3907D6B-B4C5-49F6-A11C-0624BD2407B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3907D6B-B4C5-49F6-A11C-0624BD2407B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3907D6B-B4C5-49F6-A11C-0624BD2407B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3907D6B-B4C5-49F6-A11C-0624BD2407B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69CB2460-F26A-47B9-ACCB-2B98C732A048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69CB2460-F26A-47B9-ACCB-2B98C732A048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69CB2460-F26A-47B9-ACCB-2B98C732A048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69CB2460-F26A-47B9-ACCB-2B98C732A048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{327CB405-B5A1-4B6E-838E-C8F51BCF1686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{327CB405-B5A1-4B6E-838E-C8F51BCF1686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{327CB405-B5A1-4B6E-838E-C8F51BCF1686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{327CB405-B5A1-4B6E-838E-C8F51BCF1686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C83096-B480-4272-93BF-F1555E17E631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C83096-B480-4272-93BF-F1555E17E631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C83096-B480-4272-93BF-F1555E17E631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C83096-B480-4272-93BF-F1555E17E631}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7CEB442-3970-4C1C-91E1-B566712C146D} = {21622790-C03F-4628-83CF-FFA99A0C3C7C}
+		{337BCBA5-F43F-426B-9B70-3F7D99B0178A} = {D7CEB442-3970-4C1C-91E1-B566712C146D}
+		{B3907D6B-B4C5-49F6-A11C-0624BD2407B4} = {337BCBA5-F43F-426B-9B70-3F7D99B0178A}
+		{69CB2460-F26A-47B9-ACCB-2B98C732A048} = {3FCFCCBB-E2DF-4247-B6D7-7215FDE355A8}
+		{BE454A01-301B-467D-A0BA-E0DD632A437B} = {21622790-C03F-4628-83CF-FFA99A0C3C7C}
+		{33C83096-B480-4272-93BF-F1555E17E631} = {BE454A01-301B-467D-A0BA-E0DD632A437B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04605097-1D25-4A8E-94A7-78D7C6016C8D}
+	EndGlobalSection
+EndGlobal
